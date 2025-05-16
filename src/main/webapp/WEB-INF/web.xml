@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <servlet>
+        <servlet-name>PedidoListServlet</servlet-name>
+        <servlet-class>org.iesvdm.servlets.PedidoListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PedidoListServlet</servlet-name>
+        <url-pattern>/listarPedidos</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PedidoCreateServlet</servlet-name>
+        <servlet-class>org.iesvdm.servlets.PedidoCreateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PedidoCreateServlet</servlet-name>
+        <url-pattern>/crearPedido</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ClienteEditServlet</servlet-name>
+        <servlet-class>org.iesvdm.servlets.ClienteEditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ClienteEditServlet</servlet-name>
+        <url-pattern>/editarCliente</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>PedidoDeleteServlet</servlet-name>
+        <servlet-class>org.iesvdm.servlets.PedidoDeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PedidoDeleteServlet</servlet-name>
+        <url-pattern>/borrarPedido</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PedidoEditServlet</servlet-name>
+        <servlet-class>org.iesvdm.servlets.PedidoEditServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PedidoEditServlet</servlet-name>
+        <url-pattern>/editarPedido</url-pattern>
+    </servlet-mapping>
+</web-app>

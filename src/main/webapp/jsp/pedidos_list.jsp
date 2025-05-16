@@ -7,12 +7,6 @@
 </head>
 <body>
 <div class="container mt-4">
-
-  <% String errorHorquilla = (String) request.getAttribute("errorHorquilla");
-    if (errorHorquilla != null) { %>
-  <div class="alert alert-danger"><%= errorHorquilla %></div>
-  <% } %>
-
   <h3 class="text-primary">Resumen de clientes por comercial</h3>
   <table class="table table-bordered table-success">
     <thead>
@@ -69,6 +63,11 @@
       <button type="submit" class="btn btn-info">Buscar</button>
     </div>
   </form>
+
+  <% String errorHorquilla = (String) request.getAttribute("errorHorquilla");
+    if (errorHorquilla != null) { %>
+  <div class="alert alert-danger"><%= errorHorquilla %></div>
+  <% } %>
 
   <h3 class="text-primary">Listado de Pedidos</h3>
   <a href="crearPedido" class="btn btn-primary mb-3">Crear Pedido</a>
